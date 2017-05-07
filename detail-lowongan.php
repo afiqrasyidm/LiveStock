@@ -11,47 +11,60 @@
       <div class="row">
         <div class="heading text-center"> 
           <!-- Heading -->
-          <h2>Detail Investasi Sapi</h2>
+          <h2>Investasi Sapi</h2>
           <p>Periode Januari - April 2017 Batch 1</p>
         </div>
       </div>
 	 
-      <div class="row mrgn30">
-        <form method="post" action="detail-lowongan.php" id="contactfrm" role="form">
-          <div class="col-sm-12">
-            <div class="form-group">
-              <label for="name">Masukkan jumlah saham yang ingin dibeli</label>
-              <input type="text" style="color: red;" min="0" class="form-control" name="jumlah" id="jumlah" placeholder="Masukkan jumlah saham" title="Please enter your name (at least 2 characters)">
-            </div>
-			      <div class="form-group">
-              <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-            </div>
-			
-        </form>
-
-       <div class="form-group" >
-         <?php 
-         $hasil; $untung;
-    if(isset($_POST['jumlah'])){
-      $jumlah = $_POST['jumlah'];
-      $hasil = $jumlah * 100000;
-      $untung = 0.1 * $hasil;
-       echo "<p>Jumlah saham yang ingin dibeli = $jumlah saham</p>";
-      echo "<p>Jumlah yang harus dibayarkan = Rp. $hasil,00</p>";
-      echo "<p>Jumlah keuntungan yang didapat = Rp. $untung,00 </p>";
-    }
-
-    ?>    
+      <div class="row">
+        <p>Lowongan investasi pada selama 4 bulan yaitu dari bulan januari hingga bulan april. Jumlah sapi yang akan diternakkan adalah 500 ekor sapi. Keuntungan dari investasi adalah 10% dari jumlah investasi yang diberikan. Keuntungan tersebut bersifat sekali iterasi dan dapat diambil setelah masa penggemukan sapi selesai. Apabila penggemukan sapi mengalami kerugian, maka kerugian ditanggung antara LiveStock dengan investor. </p>
+          <table width="100%">
+            <thead>
+              <tr>
+                <td width="50%">Harga satu saham sapi</td>
+                <td width="50%">Rp. 100.000,00</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Keuntungan</td>
+                <td>10% / 4 bulan</td>
+              </tr>
+              <tr>
+                <td>Jangka Penggemukan</td>
+                <td>4 bulan (Januari - April)</td>
+              </tr>
+              <tr>
+                <td>Jumlah sapi yang digemukkan</td>
+                <td>500 sapi</td>
+              </tr>
+              <tr>
+                <td>Jumlah saham yang tersedia</td>
+                <td>100 saham / 400 saham</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="container">
+        <h3> Foto Sapi yang akan diternakkan</h3>
       </div>
 
-         
-
-
-            
-            
-		<div class="form-group" style="text-align:center;">
-              <button  name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Pilih Metode Pembayaran</button>
-            </div>
+      <div>
+         <ul>
+           <li style="text-align: center;">
+             <img src="images/sapi1.jpg" style="width: 200px">
+             <img src="images/sapi2.jpg" style="width: 200px">
+             <img src="images/sapi3.jpg" style="width: 200px">
+             <img src="images/sapi4.jpg" style="width: 200px">
+             <img src="images/sapi3.jpg" style="width: 200px">
+           </li>
+         </ul>
+      </div>
+      <div style="height: 5px;"></div>
+		  <div class="form-group" style="text-align:center;">
+          <a href="detail-investasi.php"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Bergabung Investasi
+          </button></a>
+      </div>
       </div>
     </div>
     <!--/.container--> 
