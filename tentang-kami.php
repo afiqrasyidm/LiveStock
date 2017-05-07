@@ -39,9 +39,11 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-1.jpg" alt=""> </div>
+			  <br>
+              <img class="img-responsive" src="images/icon/people1.jpg" alt=""> </div>
             <!-- Member Details -->
             <div class="team-title">
+			
 			<h4>Afiq Rasyid M</h4>
             <!-- Designation --> 
             <span class="pos"></span>
@@ -55,7 +57,7 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-2.jpg" alt=""> </div>
+              <img class="img-responsive" src="images/icon/people2.jpg" alt=""> </div>
             <!-- Member Details -->
             <h4>M. Luqman Hakim</h4>
             <!-- Designation --> 
@@ -69,7 +71,7 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-3.jpg" alt=""> </div>
+              <img class="img-responsive" src="images/icon/people3.jpg" alt=""> </div>
             <!-- Member Details -->
             <h4>Radhitya R.</h4>
             <!-- Designation --> 
@@ -83,13 +85,32 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-4.jpg" alt=""> </div>
+              <img class="img-responsive" src="images/icon/people4.jpg" alt=""> </div>
             <!-- Member Details -->
             <h4>Fahri Achmadi</h4>
             <!-- Designation --> 
             <span class="pos"></span>
            
           </div>
+        </div>
+		</div>
+		
+		<div class ="row">
+		 <div class="col-md-3 col-sm-6 col-xs-12"> 
+          <!-- Team Member -->
+          <div class="team-member pDark"> 
+            <!-- Image Hover Block -->
+            <div class="member-img"> 
+              <!-- Image  --> 
+              <img class="img-responsive" src="images/icon/people5.jpg" alt=""> </div>
+            <!-- Member Details -->
+            <h4>Rohmat Taufik</h4>
+            <!-- Designation --> 
+            <span class="pos"></span>
+           
+          </div>
+		  
+		  
         </div>
 		
 		 <div class="col-md-3 col-sm-6 col-xs-12"> 
@@ -98,9 +119,13 @@
             <!-- Image Hover Block -->
             <div class="member-img"> 
               <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-4.jpg" alt=""> </div>
+			  <br>
+              <img class="img-responsive" src="images/icon/peopleAdd.jpg" alt=""
+			   style="width: 150px;height:150px;"
+			  
+			  > </div>
             <!-- Member Details -->
-            <h4>Rohmat Taufik</h4>
+            <h4>Tertarik untuk Bergabung?</h4>
             <!-- Designation --> 
             <span class="pos"></span>
            
@@ -109,20 +134,7 @@
 		  
         </div>
 		
-		<div class="col-md-3 col-sm-6 col-xs-12"> 
-          <!-- Team Member -->
-          <div class="team-member pDark"> 
-            <!-- Image Hover Block -->
-            <div class="member-img"> 
-              <!-- Image  --> 
-              <img class="img-responsive" src="images/photo-4.jpg" alt=""> </div>
-            <!-- Member Details -->
-            <h4>Rohmat Taufik</h4>
-            <!-- Designation --> 
-            <span class="pos"></span>
-           
-          </div>
-		  
+		
 		  
         </div>
 		
