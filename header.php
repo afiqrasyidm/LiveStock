@@ -47,6 +47,7 @@
           <li  id="firstLink"><a href="homepage.php" class="scroll-link">Home</a></li>
           <li><a href="#services" class="scroll-link">Syarat dan Ketentuan</a></li>
           <li><a href="#aboutUs" class="scroll-link">Cara Kerja</a></li>
+
           <li><a href="#work" class="scroll-link">Tentang Kami</a></li>
           <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
          

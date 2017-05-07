@@ -21,7 +21,7 @@
           <div class="col-sm-12">
             <div class="form-group">
               <label for="name">Masukkan jumlah saham yang ingin dibeli</label>
-              <input type="text" min="0" class="form-control" name="jumlah" id="jumlah" placeholder="Masukkan jumlah saham" title="Please enter your name (at least 2 characters)">
+              <input type="text" style="color: red;" min="0" class="form-control" name="jumlah" id="jumlah" placeholder="Masukkan jumlah saham" title="Please enter your name (at least 2 characters)">
             </div>
 			      <div class="form-group">
               <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
@@ -36,6 +36,7 @@
       $jumlah = $_POST['jumlah'];
       $hasil = $jumlah * 100000;
       $untung = 0.1 * $hasil;
+       echo "<p>Jumlah saham yang ingin dibeli = $jumlah saham</p>";
       echo "<p>Jumlah yang harus dibayarkan = Rp. $hasil,00</p>";
       echo "<p>Jumlah keuntungan yang didapat = Rp. $untung,00 </p>";
     }
