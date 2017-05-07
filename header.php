@@ -29,6 +29,9 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet">
+
 </head>
 
 <body>
@@ -44,13 +47,16 @@
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li  id="firstLink"><a href="home.php" class="scroll-link">Home</a></li>
+          <li  id="firstLink"><a href="index.php" class="scroll-link">Home</a></li>
           <li><a href="term-condition.php" class="scroll-link">Syarat dan Ketentuan</a></li>
           <li><a href="cara-kerja.php" class="scroll-link">Cara Kerja</a></li>
 
           <li><a href="about.php" class="scroll-link">Tentang Kami</a></li>
           <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
          
+		  <li><a href="#" class="scroll-link">Login</a></li>
+         
+		 
         </ul>
       </div>
       <!--/.navbar-collapse--> 
