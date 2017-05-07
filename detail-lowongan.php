@@ -1,6 +1,7 @@
 <?php
-	include 'header.php';
-	
+
+    include 'header.php';
+  
 	?>
 <!--/.header-->
 <div id="#top"></div>
@@ -49,6 +50,7 @@
         <h3> Foto Sapi yang akan diternakkan</h3>
       </div>
 
+
       <div>
          <ul>
            <li style="text-align: center;">
@@ -65,6 +67,12 @@
           <a href="detail-investasi.php"><button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Bergabung Investasi
           </button></a>
       </div>
+
+         
+
+
+            
+  
       </div>
     </div>
     <!--/.container--> 

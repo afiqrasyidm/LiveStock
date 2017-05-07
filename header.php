@@ -1,3 +1,15 @@
+<?php
+		 session_start();
+
+  require "login.php";
+
+	
+  $loginState ="<li><button id='login-button' href='#' class='btn btn-info btn-lg login-button' role='button' data-toggle='modal' data-target='#login-modal'>Login</button></li";
+  
+  if(isset($_SESSION["username"])) {
+     $loginState = "<li class='btn-group'><button id='logged-user' href='#' class='btn btn-info btn-md' role='button'  data-target='#login-modal'>".$_SESSION["username"]."</button></li><li class='btn-group'><form action='logout.php'><button id='logout-button' type='submit' class='btn btn-md'><i class='fa fa-sign-out'></i></button></form></li>";
+  }
+?>
 <!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
@@ -27,8 +39,12 @@
 <!-- Owl Carousel Assets -->
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/style.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,16 +53,22 @@
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i><img src="images/logo.png" /></i></b></a> </div>
+        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i><img src="images/logo.jpg"
+			style = "width: 150px; height: 50px;"
+			
+			/></i></b></a> </div>
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
-          <li><a href="#aboutUs" class="scroll-link">Syarat dan Ketentuan</a></li>
-          <li><a href="#services" class="scroll-link">Cara Kerja</a></li>
-          <li><a href="#work" class="scroll-link">Tentang Kami</a></li>
-          <li><a href="#plans" class="scroll-link">Perhitungan Keuntungan</a></li>
+          <li  id="firstLink"><a href="index.php" class="scroll-link">Home</a></li>
+          <li><a href="term-condition.php" class="scroll-link">Syarat dan Ketentuan</a></li>
+          <li><a href="cara-kerja.php" class="scroll-link">Cara Kerja</a></li>
+
+          <li><a href="tentang-kami.php" class="scroll-link">Tentang Kami</a></li>
+          <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
+         <?php echo $loginState ?>
          
+		 
         </ul>
       </div>
       <!--/.navbar-collapse--> 
