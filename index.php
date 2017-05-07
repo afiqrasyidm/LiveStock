@@ -1,7 +1,4 @@
 <?php
-	 session_start();
-
-  require "login.php";
 
   include 'header.php';
 	
@@ -76,7 +73,7 @@
               <h4>Sapi Limousin</h4>
               <!-- Designation --> 
             </div>
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
+  
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12"> 
@@ -94,7 +91,7 @@
             <!-- Member Details -->
             <h4>Sapi Simmental</h4>
             <!-- Designation --> 
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
+     
           </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12"> 
@@ -111,7 +108,7 @@
             <!-- Member Details -->
             <h4>Sapi Brangus</h4>
             <!-- Designation --> 
-            <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
+           
           </div>
         </div>
       </div>
@@ -240,10 +237,7 @@
       <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header" align="center">
-          <img class="img-circle" id="img_logo" src="images/Livestock.jpg">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-          </button>
+          <h3>Join Us!</h3>
         </div>
                 <!-- Begin # DIV Form -->
                 <div id="div-forms">
@@ -334,10 +328,15 @@
     <div class="heading text-center"> 
       <!-- Heading -->
       <h2>Jumlah yang telah bergabung</h2>
+	  <br>
+	  
     </div>
     <div class="row"> 
       <!-- item -->
       <div class="col-md-4 text-center">
+          <img src="images/farmer-icon.png" 
+		  style="width: 100px;height: 100px;"
+		  >
 	  
 	    <h3>0 Peternak</h3>
       </div>
@@ -345,22 +344,35 @@
       
       <!-- item -->
       <div class="col-md-4 text-center">
-        <h3>0 M Investasi</h3>
+          <img src="images/money-icon.jpg"
+		  style="width: 150px;height: 100px;"
+		  
+		  >
+
+		<h3>0 M Investasi</h3>
       </div>
       <!-- end: --> 
       
       <!-- item -->
       <div class="col-md-4 text-center">
-        <h3>0 Investor</h3>
+          <img src="images/investor-icon.jpg"
+		  
+		  style="width: 150px;height: 100px;"
+		  
+		  >
+
+		<h3>0 Investor</h3>
       </div>
       <!-- end: --> 
-      
-
-      <!-- end:--> 
+     <!-- end:--> 
     </div>
   </div>
   <!--/.container--> 
 </section>
+ <br>
+		<br>
+      
+
 <?php
 	include 'footer.php';
 	

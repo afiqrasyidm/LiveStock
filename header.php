@@ -1,8 +1,13 @@
 <?php
+		 session_start();
+
+  require "login.php";
+
+	
   $loginState ="<li><button id='login-button' href='#' class='btn btn-info btn-lg login-button' role='button' data-toggle='modal' data-target='#login-modal'>Login</button></li";
   
   if(isset($_SESSION["username"])) {
-     $loginState = "<li class='btn-group'><button id='logged-user' href='#' class='btn btn-info btn-md' role='button' data-toggle='modal' data-target='#login-modal'>".$_SESSION["username"]."</button></li><li class='btn-group'><form action='logout.php'><button id='logout-button' type='submit' class='btn btn-md'><i class='fa fa-sign-out'></i></button></form></li>";
+     $loginState = "<li class='btn-group'><button id='logged-user' href='#' class='btn btn-info btn-md' role='button'  data-target='#login-modal'>".$_SESSION["username"]."</button></li><li class='btn-group'><form action='logout.php'><button id='logout-button' type='submit' class='btn btn-md'><i class='fa fa-sign-out'></i></button></form></li>";
   }
 ?>
 <!doctype html>
@@ -59,7 +64,7 @@
           <li><a href="term-condition.php" class="scroll-link">Syarat dan Ketentuan</a></li>
           <li><a href="cara-kerja.php" class="scroll-link">Cara Kerja</a></li>
 
-          <li><a href="about.php" class="scroll-link">Tentang Kami</a></li>
+          <li><a href="tentang-kami.php" class="scroll-link">Tentang Kami</a></li>
           <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
          <?php echo $loginState ?>
          
