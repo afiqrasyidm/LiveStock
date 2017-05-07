@@ -136,21 +136,7 @@ padding: 8px 12px;
 	margin-bottom: 15px;
 	width: 75%;
 }
-.form-control {
-	border: none;
-	padding: 22px 4px;
-	outline: none;
-	color: #5A5A5A;
-	margin: 0;
-	width: 210px;
-	max-width: 100%;
-	display: block;
-	margin-bottom: 20px;
-	background: #F5F2ED;
-	font-size: inherit;
-	border-radius: 0px !important;
-	width: 99%;
-}
+
 .button-outline {
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
@@ -269,10 +255,10 @@ color:#F89F9F;
 ;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background: #8fc843;
+	background: #000;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-	color: #fff;
+	color: #000;
 }
 .navbar-inverse .navbar-toggle:hover .icon-bar {
 	background: #fff;
@@ -389,7 +375,7 @@ color:#F89F9F;
 	font-weight: 400;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #86bd2e;
+	color: #000;
 	background: none;
 	border-bottom: 2px solid #8fc843;
 	border-radius: 0px;
@@ -1465,4 +1451,12 @@ nav#filter li {
 }
 .isotopeWrapper article {
 	margin: 0px;
+}
+
+input, select, textarea{
+    color: #000;
+}
+
+textarea:focus, input:focus {
+    color: #000;
 }

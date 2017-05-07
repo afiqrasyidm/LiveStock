@@ -1,3 +1,17 @@
+<?php
+  session_start();
+  $loginState ="<li><button id='login-button' href='#' class='btn btn-info btn-lg login-button' role='button' data-toggle='modal' data-target='#login-modal'>Login</button></li";
+  
+  $logout = "logout.php";
+  if(isset($_SESSION["username"])) {
+     $loginState = "<li class='btn-group'><button id='logged-user' href='#' class='btn btn-info btn-md' role='button' data-toggle='modal' data-target='#login-modal'>".$_SESSION["username"]."</button><form action='logout.php'><button id='logout-button' type='submit' class='btn btn-md'><i class='fa fa-sign-out'></i></button></form></li>";
+  }
+
+  require "login.php";
+
+
+?>
+
 <!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
@@ -26,14 +40,18 @@
 <link href="css/animate.css" rel="stylesheet" media="screen">
 <!-- Owl Carousel Assets -->
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/styles.css" />
+
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 <header class="header">
   <div class="container">
+    <h1><?php echo $loginbisa ?></h1>
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -48,6 +66,7 @@
           <li><a href="#plans" class="scroll-link">Price</a></li>
           <li><a href="#team" class="scroll-link">Team</a></li>
           <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
+          <?php echo $loginState ?>
         </ul>
       </div>
       <!--/.navbar-collapse--> 
@@ -407,12 +426,12 @@
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
         </div>
       </div>
-      <div class="row mrgn30">
+      <div class="row mrgn30" style="color:black">
         <form method="post" action="" id="contactfrm" role="form">
           <div class="col-sm-12">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+              <input  type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
@@ -488,6 +507,102 @@
         </div>
          
     </div>
+
+
+
+<!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <img class="img-circle" id="img_logo" src="images/Livestock.jpg">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div>
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                <form id="login-form" method="post" action="<?php echo htmlspecialchars("login.php");?>">
+
+                    <div class="modal-body">
+                <div id="div-login-msg">
+                                <span>Type your username and password.</span>
+                </div>
+                <input name="username" id="login_username" class="form-control" type="text" placeholder="username/email" required>
+                <input name="password" id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+                            <div class="lost-register-button">
+                                <a href="" id="login_lost_btn">Lost Password?</a>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End # Login Form -->
+                    
+                    <!-- Begin | Lost Password Form -->
+                <form id="lost-form" style="display:none;">
+                <div class="modal-body">
+                <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                  </div>
+                <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+                    
+                <!-- Begin | Register Form -->
+                <form id="register-form" action="register.php" method="post" style="display:none;">
+                <div class="modal-body">
+                <div id="div-register-msg">
+                    <span id="text-register-msg">Register an account.</span>
+                </div>
+                  <input id="register_name" name="fullname" class="form-control" type="text" placeholder="Fullname" required>
+                  <input id="register_username" name="username" class="form-control" type="text" placeholder="Username" required>
+                  <input id="register_password" name="password" class="form-control" type="password" placeholder="Password" required>
+                  <input id="register_email" name="email" class="form-control" type="text" placeholder="E-Mail" required>
+                  <input id="register_no_hp" name="no_hp" class="form-control" type="text" placeholder="No. Hp" required>
+                  <br/>
+                </div>
+                <div class="modal-footer">
+                            <div style="margin-bottom:20px">
+                                <button type="submit" name="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+                </div>
+                    </form>
+                    <!-- End | Register Form -->
+                    
+                </div>
+                <!-- End # DIV Form -->
+                
+      </div>
+    </div>
+  </div>
+    <!-- END # MODAL LOGIN -->
     
 </footer>
 <!--/.page-section-->
@@ -512,5 +627,7 @@
 <script src="js/waypoints.js"></script> 
 <script src="js/custom.js" type="text/javascript"></script> 
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<script src="js/login-register.js"></script>
+
 </body>
 </html>
