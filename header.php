@@ -19,7 +19,7 @@
     <![endif]-->
 <!--[if lte IE 8]>
 		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
-	<![easndif]-->
+	<![endif]-->
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
 <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
@@ -29,7 +29,6 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -46,10 +45,10 @@
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
           <li  id="firstLink"><a href="home.php" class="scroll-link">Home</a></li>
-          <li><a href="#services" class="scroll-link">Syarat dan Ketentuan</a></li>
+          <li><a href="term-condition.php" class="scroll-link">Syarat dan Ketentuan</a></li>
           <li><a href="cara-kerja.php" class="scroll-link">Cara Kerja</a></li>
 
-          <li><a href="#work" class="scroll-link">Tentang Kami</a></li>
+          <li><a href="about.php" class="scroll-link">Tentang Kami</a></li>
           <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
          
         </ul>
