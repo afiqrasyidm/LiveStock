@@ -150,8 +150,7 @@
     margin-left: 20%;
 }
 
-.login-bar{
-    margin-top: 30%;
-}
 
-li .btn-group { display: inline-block; }
+.btn-group{
+    margin-top: 35px;
+}

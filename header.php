@@ -1,3 +1,10 @@
+<?php
+  $loginState ="<li><button id='login-button' href='#' class='btn btn-info btn-lg login-button' role='button' data-toggle='modal' data-target='#login-modal'>Login</button></li";
+  
+  if(isset($_SESSION["username"])) {
+     $loginState = "<li class='btn-group'><button id='logged-user' href='#' class='btn btn-info btn-md' role='button' data-toggle='modal' data-target='#login-modal'>".$_SESSION["username"]."</button></li><li class='btn-group'><form action='logout.php'><button id='logout-button' type='submit' class='btn btn-md'><i class='fa fa-sign-out'></i></button></form></li>";
+  }
+?>
 <!doctype html>
 <!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
@@ -27,8 +34,12 @@
 <!-- Owl Carousel Assets -->
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/style.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet">
+
 </head>
 
 <body>
@@ -44,13 +55,15 @@
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li  id="firstLink"><a href="home.php" class="scroll-link">Home</a></li>
+          <li  id="firstLink"><a href="index.php" class="scroll-link">Home</a></li>
           <li><a href="term-condition.php" class="scroll-link">Syarat dan Ketentuan</a></li>
           <li><a href="cara-kerja.php" class="scroll-link">Cara Kerja</a></li>
 
           <li><a href="about.php" class="scroll-link">Tentang Kami</a></li>
           <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
+         <?php echo $loginState ?>
          
+		 
         </ul>
       </div>
       <!--/.navbar-collapse--> 

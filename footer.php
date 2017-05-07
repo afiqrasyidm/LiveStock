@@ -53,5 +53,7 @@
 <script src="js/waypoints.js"></script> 
 <script src="js/custom.js" type="text/javascript"></script> 
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<script src="js/login-register.js"></script>
+
 </body>
 </html>

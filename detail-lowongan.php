@@ -1,6 +1,11 @@
 <?php
-	include 'header.php';
-	
+
+	session_start();
+  if(!isset($_SESSION["username"])) {
+    header("Location: login-form.php");
+  }
+    include 'header.php';
+  
 	?>
 <!--/.header-->
 <div id="#top"></div>
