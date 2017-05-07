@@ -29,6 +29,7 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         <ul class="nav navbar-nav" id="mainNav">
           <li  id="firstLink"><a href="home.php" class="scroll-link">Home</a></li>
           <li><a href="#services" class="scroll-link">Syarat dan Ketentuan</a></li>
-          <li><a href="#aboutUs" class="scroll-link">Cara Kerja</a></li>
+          <li><a href="cara-kerja.php" class="scroll-link">Cara Kerja</a></li>
 
           <li><a href="#work" class="scroll-link">Tentang Kami</a></li>
           <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
