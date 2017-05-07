@@ -48,9 +48,12 @@
 
             
             
-		<div class="form-group" style="text-align:center;">
-              <button  name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Pilih Metode Pembayaran</button>
-            </div>
+		<div  style="text-align:center;">
+		
+			<a href="#">	
+              <button   class="btn btn-lg btn-primary" id="submit">Pilih Metode Pembayaran</button>
+			</a>
+		</div>
       </div>
     </div>
     <!--/.container--> 

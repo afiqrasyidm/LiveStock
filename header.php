@@ -37,15 +37,18 @@
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i><img src="images/logo.png" /></i></b></a> </div>
+        <a href="#" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i><img src="images/logo.jpg"
+			style = "width: 200px;"
+			
+			/></i></b></a> </div>
       <!--/.navbar-header-->
       <div id="main-nav" class="collapse navbar-collapse">
         <ul class="nav navbar-nav" id="mainNav">
-          <li class="active" id="firstLink"><a href="#home" class="scroll-link">Home</a></li>
+          <li  id="firstLink"><a href="homepage.php" class="scroll-link">Home</a></li>
           <li><a href="#services" class="scroll-link">Syarat dan Ketentuan</a></li>
           <li><a href="#aboutUs" class="scroll-link">Cara Kerja</a></li>
           <li><a href="#work" class="scroll-link">Tentang Kami</a></li>
-          <li><a href="#plans" class="scroll-link">Perhitungan Keuntungan</a></li>
+          <li><a href="perhitungan-keuntungan.php" class="scroll-link">Perhitungan Keuntungan</a></li>
          
         </ul>
       </div>
