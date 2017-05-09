@@ -20,7 +20,7 @@
                 antara LiveStock dengan investor. 
               </p>
               <br>
-          <a href="#" class="btn">Terima dan Lanjut</a>
+          <a href="payment.php" class="btn">Terima dan Lanjut</a>
       </div>
       <div class="area2 columns feature-media left"> <img src="images/term.png" alt="" width="100%"> </div>
     </div>

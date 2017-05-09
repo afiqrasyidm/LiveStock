@@ -47,18 +47,25 @@
          
 
 
-            
-            
-		<div class="form-group" style="text-align:center;">
-              <button  name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Pilih Metode Pembayaran</button>
-            </div>
+       
       </div>
     </div>
     <!--/.container--> 
   </div>
 </section>
+     
+           <center>
+			<div >
+				<a href = "term-condition.php">
+					<button  name="submit"  class="btn btn-lg btn-primary" id="submit">Pilih Metode Pembayaran</button>
+				</a>
+            </div>
+			</center>
 
-
+			
+			<br>
+			<br><br>
+			
 <?php
 	include 'footer.php';
 	
