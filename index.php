@@ -29,6 +29,9 @@
         <form action="detail-lowongan.php">
           <?php if(!isset($_SESSION["username"])) {
               echo "<input role='button' data-toggle='modal' data-target='#login-modal' value='Mulai Sekarang' style='background-color: #4CAF50;border: none;color: white;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;padding: 10px 24px;'>";
+			  
+			
+
 
             }else{
               echo "<input type='submit' value='Mulai Sekarang' style='background-color: #4CAF50;border: none;color: white;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;padding: 10px 24px;'>";     
@@ -169,15 +172,20 @@
                 <h2>Mereka berkata..</h2>
               </div>
               <div class="row feature design">
-                <div class="area1 columns right">
-                  <h3>Muhammad Luqman Hakim</h3>
-				  <h4>Orang greget Abad 21</h4>
+                <div >
+				 <center>
+                  <h3>Luthfi Abdurrahim</h3>
+
+				  <h4>Co-founder Pasar Vendor</h4>
 				  
 				  <br>
 				  <br>
-                  <h4> LiveStock merupakan inovasi yang menarik dan kreatif yang dapat menyelesaikan permasalahan kekurangan dagi di Indonesia </h5>
-                </div>
-                <div class="area2 columns feature-media left"> <img src="images/photo-1.jpg" alt="" width="100%"> </div>
+				 
+                  <h4> Livestock, menyediakan layanan terbaik untuk investasi di bidang peternakan
+					selain itu, menjadi solusi dalam menyejahterakan para peternak sapi di Indonesia.
+					Semangat dan terus berkembang buat livestock! </h4>
+					</center>
+				</div>
               </div>
             </div>
           </section>
@@ -190,36 +198,16 @@
                 <h2>Mereka berkata..</h2>
               </div>
               <div class="row feature design">
-                <div class="area1 columns right">
-                  <h3>Muhammad Luqman Hakim</h3>
-				  <h4>Orang greget Abad 21</h4>
+                <div >
+				 <center>
+				<h3>M Hanif F</h3>
+				  <h4>Co-founder KerjAsik</h4>
 				  
 				  <br>
 				  <br>
-                  <h4> LiveStock merupakan inovasi yang menarik dan kreatif yang dapat menyelesaikan permasalahan kekurangan dagi di Indonesia </h5>
-                </div>
-                <div class="area2 columns feature-media left"> <img src="images/photo-2.jpg" alt="" width="100%"> </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="item">
-          <section id="aboutUs">
-            <div class="container">
-              <div class="heading text-center"> 
-                <!-- Heading -->
-                <h2>Mereka berkata..</h2>
-              </div>
-              <div class="row feature design">
-                <div class="area1 columns right">
-					<h3>Muhammad Luqman Hakim</h3>
-				  <h4>Orang greget Abad 21</h4>
-				  
-				  <br>
-				  <br>
-                  <h4> LiveStock merupakan inovasi yang menarik dan kreatif yang dapat menyelesaikan permasalahan kekurangan dagi di Indonesia </h5>
-                </div>
-                <div class="area2 columns feature-media left"> <img src="images/photo-3.jpg" alt="" width="100%"> </div>
+                  <h4> Livestock memberikan solusi yang sangat inovatif untuk menjadi pilihan investasi..Terus berkembang </h4>
+                </center>
+				</div>
               </div>
             </div>
           </section>

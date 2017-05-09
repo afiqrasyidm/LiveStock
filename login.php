@@ -23,6 +23,13 @@
 			$_SESSION['username'] = $userData["username"];
 			$_SESSION['email'] = $userData["email"];
 			
+
+			
+			$sql1 = "UPDATE user SET login_count =  login_count + 1 WHERE username = '$username'";
+
+			$updateData = $conn->query($sql1);
+
+
 			
 			echo "<script>
 				window.location.href='index.php';
